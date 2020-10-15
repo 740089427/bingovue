@@ -47,5 +47,12 @@ Vue.use(Element)
 
 
 
+在package.json 的 scripts 中添加
+"serve": "vue-cli-service serve",
 
-   
+yarn add @vue/cli-service
+
+yarn serve
+
+
+
