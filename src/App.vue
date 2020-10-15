@@ -2,12 +2,24 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+     <el-button @click="test">test</el-button>
+     <el-dialog :visible=visible title="test"></el-dialog>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: function () {
+    return {
+      visible: false
+    }
+  },
+  methods: {
+    test () {
+      this.visible = true
+    }
+  }
 }
 </script>
 
