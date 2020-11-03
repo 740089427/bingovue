@@ -21,6 +21,12 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'import/extensions': ['error', 'always', {
+      js: 'never',
+      vue: 'never',
+      ts: 'never',
+      tsx: 'never'
+    }],
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development

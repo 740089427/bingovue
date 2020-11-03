@@ -62,3 +62,29 @@ yarn add axios
 
 https://github.com/axios/axios
 使用axios
+
+新增less 支持
+yarn add less -g
+
+产看less 版本 yarn lessc -v
+
+新增 less loader
+yarn add less-loader
+
+安装 typescript
+yarn add typescript -g
+
+
+找到 webpack.base.conf.js 文件 修改 resolve  节点下的 extensions 新增 '.ts', '.tsx',
+
+找到 esintrc.js 文件 在 rules 节点里面 新增 
+    'import/extensions': ['error', 'always', {
+      js: 'never',
+      vue: 'never',
+      ts: 'never',
+      tsx: 'never'
+    }],
+
+忽略 ts 后缀
+
+
